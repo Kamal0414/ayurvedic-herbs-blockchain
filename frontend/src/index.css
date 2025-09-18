@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ayurvedic Traceability Platform Design System
+   Natural, professional aesthetic with earth tones and deep greens
+   All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 120 60% 98%;
+    --foreground: 140 15% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 140 15% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 140 15% 15%;
+
+    /* Deep forest green for primary actions */
+    --primary: 140 60% 25%;
+    --primary-foreground: 120 60% 98%;
+
+    /* Light sage green for secondary elements */
+    --secondary: 120 25% 92%;
+    --secondary-foreground: 140 15% 15%;
+
+    /* Muted earth tones */
+    --muted: 120 15% 94%;
+    --muted-foreground: 140 10% 45%;
+
+    /* Golden amber for quality certifications */
+    --accent: 45 90% 55%;
+    --accent-foreground: 140 15% 15%;
+
+    /* Warning/error states */
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 98%;
+
+    /* Borders and inputs with natural feel */
+    --border: 120 20% 88%;
+    --input: 120 20% 95%;
+    --ring: 140 60% 25%;
+
+    /* Success state for verified items */
+    --success: 120 50% 45%;
+    --success-foreground: 0 0% 98%;
+
+    /* Warning for pending verification */
+    --warning: 35 85% 55%;
+    --warning-foreground: 140 15% 15%;
+
+    /* Gradients for visual appeal */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(140 40% 35%));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(45 70% 65%));
+    --gradient-hero: linear-gradient(135deg, hsl(120 60% 98%), hsl(120 40% 95%));
+
+    /* Shadows with natural depth */
+    --shadow-soft: 0 2px 8px hsl(140 20% 20% / 0.08);
+    --shadow-strong: 0 8px 32px hsl(140 20% 20% / 0.12);
+    --shadow-glow: 0 0 20px hsl(var(--accent) / 0.3);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 140 20% 8%;
+    --foreground: 120 30% 92%;
+
+    --card: 140 15% 12%;
+    --card-foreground: 120 30% 92%;
+
+    --popover: 140 15% 12%;
+    --popover-foreground: 120 30% 92%;
+
+    --primary: 120 40% 75%;
+    --primary-foreground: 140 20% 8%;
+
+    --secondary: 140 10% 20%;
+    --secondary-foreground: 120 30% 92%;
+
+    --muted: 140 10% 18%;
+    --muted-foreground: 120 15% 65%;
+
+    --accent: 45 80% 65%;
+    --accent-foreground: 140 20% 8%;
+
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 140 10% 25%;
+    --input: 140 10% 20%;
+    --ring: 120 40% 75%;
+
+    --success: 120 40% 55%;
+    --success-foreground: 0 0% 98%;
+
+    --warning: 35 75% 60%;
+    --warning-foreground: 140 20% 8%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(120 30% 65%));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(45 60% 75%));
+    --gradient-hero: linear-gradient(135deg, hsl(140 20% 8%), hsl(140 15% 12%));
+
+    --shadow-soft: 0 2px 8px hsl(0 0% 0% / 0.2);
+    --shadow-strong: 0 8px 32px hsl(0 0% 0% / 0.3);
+    --shadow-glow: 0 0 20px hsl(var(--accent) / 0.4);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
